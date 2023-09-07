@@ -1,0 +1,3 @@
+if machine is low end, due to low amount of memory this error occur:
+
+RuntimeError: [enforce fail at ..\c10\core\impl\alloc_cpu.cpp:72] data. DefaultCPUAllocator: not enough memory: you tried to allocate 3397386240 bytes.
