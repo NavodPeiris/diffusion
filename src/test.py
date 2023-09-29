@@ -20,6 +20,13 @@ hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
 print("ip_address : ", ip_address)
 
+out_folder = 'result_images'
+
+# Check if out_folder exists, if not, create it
+if not os.path.exists(out_folder):
+    os.makedirs(out_folder)
+
+
 @app.get('/diffusion/health')
 async def hi():
     return {"response": "server running"}
